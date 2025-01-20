@@ -8,7 +8,7 @@
 }
 
 :host h1 {
-  background: var(--light-purple);
+  background: var(--dark-purple);
   color: var(--light-gray);
   padding: 10px;
   margin: 0;

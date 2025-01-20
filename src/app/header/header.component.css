@@ -15,7 +15,7 @@ header h1 img {
   color: var(--light-gray);
   margin: 0;
   padding: .67em;
-  background: var(--light-purple);
+  background: var(--dark-purple);
   display: flex;
   align-items: center;
   gap: 10px;
