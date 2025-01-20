@@ -1,0 +1,60 @@
+h1 {
+  font-size: 4em;
+  color: var(--dark-purple);
+}
+
+h2 {
+  font-size: 3em;
+}
+
+strong {
+  color: var(--light-purple);
+}
+
+button {
+  cursor: pointer;
+  background: var(--light-blue);
+  color: var(--light-gray);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 auto;
+  font-size: 2em;
+  font-family: var(--font);
+}
+
+button:hover {
+  background: var(--dark-blue);
+}
+
+.rotateIn {
+  display: inline-block;
+  animation: wipe-in-right 1s ease-in-out;
+  transform-origin: bottom left;
+}
+.fadeOut {
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:right"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

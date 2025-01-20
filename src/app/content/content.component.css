@@ -1,0 +1,16 @@
+:host {
+  background: var(--light-green);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 60%;
+  padding: 20px;
+  background: var(--light-gray);
+  height: 100%;
+  box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}

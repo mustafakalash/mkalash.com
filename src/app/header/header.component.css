@@ -1,0 +1,63 @@
+:host header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--dark-green);
+  padding: 0 15%;
+  align-items: stretch;
+}
+
+header h1 img {
+  clip-path: circle();
+  height: 2em;
+}
+
+:host h1 {
+  color: var(--light-gray);
+  margin: 0;
+  padding: .67em;
+  background: var(--light-purple);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+:host menu {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  align-items: stretch;
+  gap: 5px;
+}
+
+:host menu li {
+  list-style: none;
+}
+
+:host menu li button {
+  height: 100%;
+  padding: 0 1em;
+  background: var(--light-blue);
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+  color: var(--light-gray);
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: var(--font);
+}
+
+:host menu li button:hover {
+  background: var(--dark-blue);
+}
+
+:host menu li button:active {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+}
+
+:host menu li button.active {
+  box-shadow: inset 2px 2px 10px rgba(255, 255, 255, .1), inset -5px -8px 8px rgba(0, 0, 0, .2);
+  background: var(--dark-blue);
+  cursor: default;
+}

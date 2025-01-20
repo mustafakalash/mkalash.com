@@ -1,0 +1,22 @@
+:host footer {
+  background: var(--dark-green);
+  display: flex;
+  padding: 10px 15%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: 5px;
+}
+
+.links a, .links a:visited {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.links a:hover {
+  color: var(--dark-blue);
+}

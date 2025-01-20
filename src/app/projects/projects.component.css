@@ -1,0 +1,19 @@
+button {
+  cursor: pointer;
+  background: var(--light-blue);
+  color: var(--light-gray);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 auto;
+  font-size: 1em;
+  font-family: var(--font);
+}
+
+button:hover {
+  background: var(--dark-blue);
+}
+
+strong {
+  color: var(--light-purple);
+}

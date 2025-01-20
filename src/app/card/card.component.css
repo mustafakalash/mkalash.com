@@ -1,0 +1,138 @@
+:host {
+  background: var(--dark-green);
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  text-align: center;
+  position: relative;
+  max-width: calc(50% - 10px);
+}
+
+:host h1 {
+  background: var(--light-purple);
+  color: var(--light-gray);
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+:host button {
+  cursor: pointer;
+  background: var(--light-blue);
+  color: var(--light-gray);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 auto;
+  font-family: var(--font);
+}
+
+:host button:hover {
+  background: var(--dark-blue);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-top: none;
+}
+
+.links a, .links a:visited {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.links a:hover {
+  color: var(--dark-blue);
+}
+
+.description {
+  padding: 0 20px 20px 20px;
+}
+
+.description p {
+  padding-top:10px;
+  border-top: solid 2px var(--light-green);
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images img {
+  flex: 100px;
+  min-width: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1), 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+}
+
+:host ul {
+  border-top: solid 2px var(--light-green);
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-flow: wrap;
+  gap: 10px;
+}
+
+:host li {
+  list-style: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background: var(--light-purple);
+  color: var(--light-gray);
+}
+
+::ng-deep .lightboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: color-mix(in srgb, var(--light-purple) 75%, transparent);
+  z-index: 9001;
+}
+
+::ng-deep .lightbox {
+    position: fixed;
+    top: 50vh !important;
+    left: 50vw !important;
+    transform: translate(-50%, -50%);
+    z-index: 9002;
+    background: var(--dark-green);
+    border-radius: 10px;
+    box-shadow: 0 60px 80px rgba(0, 0, 0, 0.60), 0 45px 26px rgba(0, 0, 0, 0.14);
+    text-align: center;
+    width: auto;
+}
+
+::ng-deep .lb-image {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+::ng-deep .lb-outerContainer {
+  background: none !important;
+}
+
+::ng-deep .lb-dataContainer {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+::ng-deep .lb-data {
+  padding: 0 !important;
+  color: black !important;
+}
+
+::ng-deep .lb-caption {
+  font-weight: normal !important;
+  font-size: unset !important;
+}

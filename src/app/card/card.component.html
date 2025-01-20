@@ -1,0 +1,17 @@
+<article>
+  <header>
+    <h1>{{card.title}}</h1>
+  </header>
+  <div class="images">
+    <img *ngFor="let album of albums; let i = index" [src]="album.src" (click)="open(i)" />
+  </div>
+  <div class="description">
+    <p>{{card.description}}</p>
+    <span class="links">
+      <a *ngFor="let link of card.links" [href]="link.url" target="_blank"><fa-icon [icon]="link.icon" /></a>
+    </span>
+    <ul>
+      <li *ngFor="let keyword of card.keywords">{{keyword}}</li>
+    </ul>
+  </div>
+</article>
