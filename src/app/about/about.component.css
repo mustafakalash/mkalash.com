@@ -40,3 +40,20 @@ button {
 button:hover {
   background: var(--dark-blue);
 }
+
+ul {
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-flow: wrap;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background: var(--light-purple);
+  color: var(--light-gray);
+}

@@ -32,7 +32,7 @@ export class ProjectsComponent {
           icon: faGithub
         }
       ],
-      keywords: ["Angular", "Typescript", "HTML", "CSS", "JavaScript"]
+      keywords: ["Angular", "TypeScript", "HTML", "CSS", "JavaScript"]
     },
     {
       title: "Advent of Code 2024",
