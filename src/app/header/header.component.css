@@ -1,32 +1,37 @@
-:host header {
-  display: flex;
-  justify-content: space-between;
+:host {
   background: var(--dark-green);
-  padding: 0 15%;
-  align-items: stretch;
+}
+
+:host header {
+  width: var(--body-width);
+  margin: 0 auto;
 }
 
 header h1 img {
   clip-path: circle();
-  height: 2em;
+  height: 1.5em;
 }
 
 :host h1 {
+  background: var(--dark-purple);
   color: var(--light-gray);
   margin: 0;
   padding: .67em;
-  background: var(--dark-purple);
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
 :host menu {
+  background: var(--light-purple);
   height: 100%;
   display: flex;
   margin: 0;
   align-items: stretch;
-  gap: 5px;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
 }
 
 :host menu li {
@@ -35,10 +40,12 @@ header h1 img {
 
 :host menu li button {
   height: 100%;
-  padding: 0 1em;
+  padding: 1em;
   background: var(--light-blue);
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
   color: var(--light-gray);
   cursor: pointer;
@@ -47,6 +54,7 @@ header h1 img {
   font-size: 1em;
   font-family: var(--font);
 }
+
 
 :host menu li button:hover {
   background: var(--dark-blue);
@@ -60,4 +68,14 @@ header h1 img {
   box-shadow: inset 2px 2px 10px rgba(255, 255, 255, .1), inset -5px -8px 8px rgba(0, 0, 0, .2);
   background: var(--dark-blue);
   cursor: default;
+}
+
+@media only screen and (max-width: 500px) {
+  :host menu {
+    flex-direction: column;
+  }
+
+  :host menu li button {
+    width: 100%;
+  }
 }

@@ -7,6 +7,12 @@
   max-width: calc(50% - 10px);
 }
 
+@media only screen and (max-width: 600px) {
+  :host {
+    max-width: 100%;
+  }
+}
+
 :host h1 {
   background: var(--dark-purple);
   color: var(--light-gray);

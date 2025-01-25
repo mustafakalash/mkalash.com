@@ -5,10 +5,30 @@
   </h1>
   <nav>
     <menu>
-      <li><button routerLink="/home" routerLinkActive="active">Home</button></li>
-      <li><button routerLink="/about" routerLinkActive="active">About</button></li>
-      <li><button routerLink="/projects" routerLinkActive="active">Projects</button></li>
-      <li><button routerLink="/contact" routerLinkActive="active">Contact</button></li>
+      <li>
+        <button routerLink="/home" routerLinkActive="active">
+          <fa-icon [icon]="['fas', 'home']" alt="Home"></fa-icon>
+          <span class="navText">Home</span>
+        </button>
+      </li>
+      <li>
+        <button routerLink="/about" routerLinkActive="active">
+          <fa-icon [icon]="['fas', 'vcard']" alt="About"></fa-icon>
+          <span class="navText">About</span>
+        </button>
+      </li>
+      <li>
+        <button routerLink="/projects" routerLinkActive="active">
+          <fa-icon [icon]="['fas', 'folder']" alt="Folder"></fa-icon>
+          <span class="navText">Projects</span>
+        </button>
+      </li>
+      <li>
+        <button routerLink="/contact" routerLinkActive="active">
+          <fa-icon [icon]="['fas', 'envelope']" alt="Contact"></fa-icon>
+          <span class="navText">Contact</span>
+        </button>
+      </li>
     </menu>
   </nav>
 </header>
