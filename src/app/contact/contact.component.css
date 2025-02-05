@@ -4,21 +4,10 @@
   align-items: center;
 }
 
-.links {
-  display: flex;
+app-links {
   justify-content: center;
   gap: 20px;
-}
-
-.links a,
-.links a:visited {
-  color: var(--light-blue);
-  text-decoration: none;
   font-size: 3em;
-}
-
-.links a:hover {
-  color: var(--dark-blue);
 }
 
 img {

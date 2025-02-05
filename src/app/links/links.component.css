@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+}
+
+a, a:visited {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-blue);
+}

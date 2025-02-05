@@ -7,17 +7,7 @@
   gap: 20px;
 }
 
-.links {
-  display: flex;
+app-links {
   gap: 5px;
-}
-
-.links a, .links a:visited {
-  color: var(--light-blue);
-  text-decoration: none;
   font-size: 1.5em;
-}
-
-.links a:hover {
-  color: var(--dark-blue);
 }
